@@ -1,0 +1,60 @@
+.inputTask {
+    display: grid;
+    grid-template-columns: 1fr 50px 50px;
+    margin-bottom: 15px;
+    background: #DBE2EF;
+    border-radius: 5px;
+    gap: 10px;
+    
+    &Label {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        padding: 12px 15px;
+        cursor: pointer;
+    }
+
+    &Checkbox {
+        width: 20px;
+        height: 20px;
+    }
+
+    &Title {
+        padding: 5px;
+        line-height: 1.2;
+    }
+
+    &EditTitle {
+        font: 1rem/1em 'Roboto' sans-serif;
+        border: none;
+        padding: 5px;
+        background: none;
+        box-shadow: 0 4px 0 -3px #3F72AF;
+    }
+
+    &Edit, &Remove, &Ok {
+        display: block;
+        height: 100%;
+        border: none;
+        background: none no-repeat center center;
+        cursor: pointer;
+        padding: 0;
+        transition: opacity .3s;
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+
+    &Edit {
+        background: url('/public/edit.svg') no-repeat center center;
+    }
+
+    &Remove {
+        background: url('/public/trash.svg') no-repeat center center;
+    }
+
+    &Ok {
+        background: url('/public/check.svg') no-repeat center center;
+    }
+}
